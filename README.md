@@ -1,3 +1,5 @@
+![Cypress versus Playwright: The Rematch (Banner)](rematch-banner.png)
+
 # Cypress vs. Playwright: The Rematch
 
 This repository holds the code for the Applitools webinar,
