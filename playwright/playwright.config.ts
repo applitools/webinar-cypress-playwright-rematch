@@ -42,6 +42,10 @@ const config: PlaywrightTestConfig = {
     trace: 'on-first-retry',
 
     baseURL: 'http://localhost:3000/',
+
+    // launchOptions: {
+    //   slowMo: 1000,
+    // },
   },
 
   /* Configure projects for major browsers */
