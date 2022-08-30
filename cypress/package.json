@@ -10,7 +10,10 @@
   "author": "Filip Hric (https://filiphric.com/)",
   "license": "ISC",
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.1.0",
+    "@cypress/webpack-preprocessor": "^5.12.2",
     "cypress": "^10.6.0",
+    "ts-loader": "^9.3.1",
     "typescript": "^4.8.2"
   }
 }
