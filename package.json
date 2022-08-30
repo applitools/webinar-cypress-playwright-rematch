@@ -1,0 +1,21 @@
+{
+  "name": "webinar-cypress-playwright-rematch",
+  "version": "1.0.0",
+  "description": "Cypress versus Playwright: The Rematch",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "git submodule update --init --recursive --remote && cd trelloapp && npm install",
+    "start": "cd trelloapp && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applitools/webinar-cypress-playwright-rematch.git"
+  },
+  "keywords": [],
+  "author": "Filip Hric (https://filiphric.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/applitools/webinar-cypress-playwright-rematch/issues"
+  },
+  "homepage": "https://github.com/applitools/webinar-cypress-playwright-rematch#readme"
+}
