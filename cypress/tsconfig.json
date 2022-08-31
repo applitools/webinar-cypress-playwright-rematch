@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": false,
     "baseUrl": "./",
     "target": "es5",
     "lib": [
@@ -8,7 +9,8 @@
     ],
     "types": [
       "cypress",
-      "node"
+      "node",
+      "cypress-xpath"
     ]
   },
   "include": [
