@@ -7,7 +7,7 @@ it('List should have all the items', { tags: '@smoke' }, () => {
 
 });
 
-it('Will not find enough items and will fail', () => {
+it.skip('Will not find enough items and will fail', () => {
 
   cy.visit('/board/1')
 
@@ -18,7 +18,7 @@ it('Will not find enough items and will fail', () => {
 
 it('Will be flaky', () => {
 
-  const count = Math.floor(Math.random() * 2) + 2
+  let count = Math.floor(Math.random() * 2) + 2
 
   cy.visit('/board/1')
 

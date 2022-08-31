@@ -6,11 +6,22 @@
   "keywords": [],
   "author": "Filip Hric (https://filiphric.com/)",
   "license": "ISC",
+  "scripts": {
+    "cy:run:mochawesome": "cypress run --reporter cypress-mochawesome-reporter",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:smoke": "cypress run --env grepTags=@smoke",
+    "cy:run:coverage": "cypress run --env coverage=true"
+  },
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.27.1",
     "@badeball/cypress-cucumber-preprocessor": "^12.1.0",
+    "@cypress/code-coverage": "^3.10.0",
     "@cypress/webpack-preprocessor": "^5.12.2",
     "cypress": "^10.7.0",
     "cypress-grep": "^3.0.2",
+    "cypress-mochawesome-reporter": "^3.2.2",
     "cypress-xpath": "^2.0.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.8.2"

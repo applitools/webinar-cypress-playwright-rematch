@@ -37,7 +37,12 @@ async function setupNodeEvents(
     },
   })
   );
+
+  require('@applitools/eyes-cypress')(module)
   require('cypress-grep/src/plugin')(config);
+  require('cypress-mochawesome-reporter/plugin')(on);
+  require('@cypress/code-coverage/task')(on, config)
+
   return config;
 }
 

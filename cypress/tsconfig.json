@@ -11,8 +11,9 @@
       "cypress",
       "node",
       "cypress-xpath",
-      "cypress-grep"
-    ]
+      "cypress-grep",
+      "@applitools/eyes-cypress"
+    ],
   },
   "include": [
     "**/*.ts"
