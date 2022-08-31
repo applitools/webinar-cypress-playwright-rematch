@@ -26,6 +26,21 @@ Will new features in Cypress 10 steal the thunder?
 Will Playwright’s test generation and tracing abilities send a final KO?
 Join us live on September 8 for the showdown of the year!
 
+## Trello clone app
+Bundled within the repo is an app that is a clone of a popular [Trello app](https://trello.com). You can create boards, lists and cards. You can drag and drop cards between tests or even upload a picture to the card detail. There’s also a very simple signup and login which will allow you to create private boards
+
+### Installation
+Super simple
+1. `npm install`
+2. `npm start`
+3. Open your browser on `http://localhost:3000`
+
+### Database
+The application uses a json file for a database which you can find in `trelloapp/backend/data/database.json`. Uploaded files are in `trelloapp/backend/data/uploaded` folder.
+
+### Application utilities
+By typing `F2` key in the application, a small toolset appears that will allow you to reset your application to a desired state. You can delete boards, lists, cards, users or everything. This is useful when playing with the application manually.
+
 
 ## The Cypress code
 
@@ -37,6 +52,9 @@ $ npm install
 $ npx cypress run
 ```
 
+You can also use scripts defined in `cypress/package.json` file with `npm run <script-name>` command. These enable you to run different reporters, browser, subset of tests or run code coverage reports.
+
+You can also take a look at the Cypress dashboard that is [publicly available for this project](https://dashboard.cypress.io/projects/xp9to9/runs).
 
 ## The Playwright code
 
