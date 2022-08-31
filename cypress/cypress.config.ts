@@ -44,9 +44,13 @@ async function setupNodeEvents(
 }
 
 export default defineConfig({
+  viewportHeight: 550,
+  viewportWidth: 700,
   e2e: {
     baseUrl: 'http://localhost:3000',
     specPattern: "cypress/e2e/**/*.{feature,ts}",
-    setupNodeEvents
+    setupNodeEvents,
+    experimentalSessionAndOrigin: true,
+    experimentalStudio: true
   },
 });
