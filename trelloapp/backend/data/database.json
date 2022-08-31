@@ -1,6 +1,146 @@
 {
-  "boards": [],
-  "cards": [],
-  "lists": [],
-  "users": []
+  "boards": [
+    {
+      "name": "Space program",
+      "user": 0,
+      "starred": false,
+      "created": "2022-08-31",
+      "id": 1
+    },
+    {
+      "name": "Colors",
+      "user": 0,
+      "starred": false,
+      "created": "2022-08-31",
+      "id": 2
+    },
+    {
+      "name": "Private board",
+      "user": 1,
+      "starred": false,
+      "created": "2022-08-31",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "order": 0,
+      "boardId": 1,
+      "listId": 1,
+      "name": "Launch pad checks",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "order": 1,
+      "boardId": 1,
+      "listId": 1,
+      "name": "Control room checks",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "order": 0,
+      "boardId": 2,
+      "listId": 2,
+      "name": "Red",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "order": 1,
+      "boardId": 2,
+      "listId": 2,
+      "name": "Green",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "order": 2,
+      "boardId": 2,
+      "listId": 2,
+      "name": "Blue",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "order": 0,
+      "boardId": 2,
+      "listId": 3,
+      "name": "Cyan",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "order": 1,
+      "boardId": 2,
+      "listId": 3,
+      "name": "Magenta",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "order": 2,
+      "boardId": 2,
+      "listId": 3,
+      "name": "Yellow",
+      "created": "2022-08-31",
+      "deadline": "2022-09-03",
+      "description": "",
+      "completed": false,
+      "id": 8
+    }
+  ],
+  "lists": [
+    {
+      "boardId": 1,
+      "name": "Launch preparations",
+      "order": 0,
+      "created": "2022-08-31",
+      "id": 1
+    },
+    {
+      "boardId": 2,
+      "name": "Primary colors",
+      "order": 0,
+      "created": "2022-08-31",
+      "id": 2
+    },
+    {
+      "boardId": 2,
+      "name": "Secondary colors",
+      "order": 1,
+      "created": "2022-08-31",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "filip@example.com",
+      "password": "$2a$10$qxedBA375M5RnIQPjauOaetzLkNFDApVfYhIuqV8X.BbC1mt1l3HO",
+      "welcomeEmail": false,
+      "id": 1
+    }
+  ]
 }
