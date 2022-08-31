@@ -7,7 +7,7 @@ it('List should have all the items', () => {
 
 });
 
-it('Will not find enough items and will fail', () => {
+it.skip('Will not find enough items and will fail', () => {
 
   cy.visit('/board/1')
 

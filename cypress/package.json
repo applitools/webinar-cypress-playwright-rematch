@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "Filip Hric (https://filiphric.com/)",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^12.1.0",
     "@cypress/webpack-preprocessor": "^5.12.2",
     "cypress": "^10.7.0",

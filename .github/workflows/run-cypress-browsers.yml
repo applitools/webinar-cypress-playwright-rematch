@@ -1,0 +1,26 @@
+name: run cypress e2e-tests on different browsers
+on: [pull_request]
+jobs:
+  cypress-run:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Chrome
+        uses: cypress-io/github-action@v4
+        with:
+          start: npm start
+          browser: chrome
+          project: ./cypress
+      - name: Firefox
+        uses: cypress-io/github-action@v4
+        with:
+          start: npm start
+          browser: firefox
+          project: ./cypress
+      - name: Edge
+        uses: cypress-io/github-action@v4
+        with:
+          start: npm start
+          browser: edge
+          project: ./cypress
