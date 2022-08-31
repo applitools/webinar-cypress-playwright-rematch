@@ -53,5 +53,4 @@ it('Selecting elements on page', () => {
   // select all the cards that are at the same level as "Red" card
   cy.contains('[data-cy=card]', 'Red').siblings()
 
-
 });

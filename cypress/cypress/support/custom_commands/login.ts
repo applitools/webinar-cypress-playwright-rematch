@@ -7,7 +7,7 @@ declare global {
        * @param email email of the user you want to log in
        * @param password user passwird
        * @example
-       * cy.login('filip', 'i<3slovakia')
+       * cy.login('filip@example.com', 'i<3slovakia!')
        *
        */
       login(email: string, password: string): Chainable<any>;

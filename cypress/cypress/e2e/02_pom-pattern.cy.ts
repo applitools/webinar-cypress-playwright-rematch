@@ -4,7 +4,7 @@ it('visiting the login page', () => {
 
   loginPage
     .load()
-    .login('filip', 'i<3slovakia!')
+    .login('filip@example.com', 'i<3slovakia!')
 
 });
 
