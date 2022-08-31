@@ -10,7 +10,8 @@
     "types": [
       "cypress",
       "node",
-      "cypress-xpath"
+      "cypress-xpath",
+      "cypress-grep"
     ]
   },
   "include": [

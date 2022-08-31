@@ -22,7 +22,7 @@ describe('Logging in', () => {
 });
 
 
-describe('Caching login session', () => {
+describe('Caching login session', { tags: '@smoke' }, () => {
 
   beforeEach('cache login session', () => {
     cy.session('login', () => {

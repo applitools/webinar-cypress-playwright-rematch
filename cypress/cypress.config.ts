@@ -7,7 +7,6 @@ async function setupNodeEvents(
   config: Cypress.PluginConfigOptions
 ): Promise<Cypress.PluginConfigOptions> {
   await addCucumberPreprocessorPlugin(on, config);
-
   on("file:preprocessor", webpack({
     webpackOptions: {
       resolve: {
@@ -38,12 +37,12 @@ async function setupNodeEvents(
     },
   })
   );
-
-  // Make sure to return the config object as it might have been modified by the plugin.
+  require('cypress-grep/src/plugin')(config);
   return config;
 }
 
 export default defineConfig({
+  projectId: 'xp9to9',
   viewportHeight: 550,
   viewportWidth: 700,
   e2e: {
@@ -51,6 +50,13 @@ export default defineConfig({
     specPattern: "cypress/e2e/**/*.{feature,ts}",
     setupNodeEvents,
     experimentalSessionAndOrigin: true,
-    experimentalStudio: true
+    experimentalStudio: true,
+    retries: {
+      runMode: 1
+    },
+    env: {
+      grepFilterSpecs: true,
+      grepOmitFiltered: true
+    }
   },
 });
