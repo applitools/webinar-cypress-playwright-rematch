@@ -47,10 +47,6 @@ const config: PlaywrightTestConfig = {
     // Tell all tests to load signed-in state from 'storageState.json'.
     storageState: 'storageState.json',
 
-    extraHTTPHeaders: {
-      'Accept': 'application/json',
-    },
-
     // launchOptions: {
     //   slowMo: 1000,
     // },
